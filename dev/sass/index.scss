@@ -43,9 +43,14 @@ html {
 
 }
 
+.product:hover {
+    background: #E6F3FC;
+}
+
 .recommended {
     display: inline-block;
     width: 80%;
+    overflow: hidden;
 }
 
 .reference {
@@ -161,5 +166,52 @@ html {
 
 .imageBox {
     background: white;
-    margin: 10% 10% 10% 10%;
+    margin: 5%;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .vitrine {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .reference {
+        width: 100%;
+    }
+
+    .recommended {
+        width: 100%;
+    }
+
+    .left-side {
+        padding-left: 0px;
+        border-radius: 10px 10px 0 0;
+
+    }
+
+    .product {
+        margin: 12%;
+    }
+
+    .right-arrow{
+        right: 4%;
+    }
+
+    .left-arrow{
+        left: 4%;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .vitrine {
+        width: 80%;
+        position: relative;
+    }
+} 
