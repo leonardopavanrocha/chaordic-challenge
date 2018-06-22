@@ -43,6 +43,10 @@ html {
 
 }
 
+.product:hover {
+    background: #E6F3FC;
+}
+
 .recommended {
     display: inline-block;
     width: 80%;
@@ -161,5 +165,6 @@ html {
 
 .imageBox {
     background: white;
-    margin: 10% 10% 10% 10%;
+    margin: 5%;
 }
+
