@@ -98,7 +98,12 @@ function X(json) {
     function createReference(reference) {
         var DOMElement = createProduct(reference.item);
         document.getElementById("visitedProduct").appendChild(DOMElement);
-
+        
+        //data-src is used for lazy loading the images. Every image receives a 'data-src' attribute which contains the
+        //url for the image. When needed, we can get the 'data-src' value and assign it to 'src', this waz loading the image.
+        //Since image loading is a synchronous process, it needs to finish before making another request. In this example, we
+        //only have 11 images, but in a real application it would be interesting to apply lazy loading in order to reduce loading time
+        
         /*var image_src = DOMElement.getAttribute('data-src');
         console.log(DOMElement);
         DOMElement.setAttribute('src', image_src);*/
@@ -120,7 +125,7 @@ function X(json) {
         initialize();
 
         //TODO lazy loads images
-
+        //Next step would be to implement the lazy loading. Images that should appear, would have the data-src value assigned to src.
 
         //create event listeners
         document.getElementById("right-arrow").addEventListener("click", slideRight);
@@ -132,7 +137,6 @@ function X(json) {
         slideCount++;
         console.log(slideCount);
         if (slideCount >= (maxSlideCount)) {
-            console.log("ZEROU");
             slideCount = 0;
             clearCarousel();
 
