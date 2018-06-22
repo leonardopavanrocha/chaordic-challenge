@@ -4,7 +4,7 @@ This repository contains the showcase component developed by Leonardo Pavan Roch
 
   
 # Demo
-- Available on http://leonardopavanrocha.github.io/chaordic-challenge
+- Available on http://leonardopavanrocha.github.io/chaordic-challenge [not available because of script blocking that prevents the data to be sent to the application]
   
 
 # Dependencies
