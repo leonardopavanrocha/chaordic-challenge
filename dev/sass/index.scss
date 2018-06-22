@@ -34,6 +34,7 @@ html {
     margin: 3%;
     text-decoration: none;
     vertical-align: top;
+    width:100%;
 }
 
 .box {
@@ -55,6 +56,8 @@ html {
 
 .reference {
     display: inline-block;
+    vertical-align: top;
+    width: 20%
 }
 
 .productName {
@@ -156,7 +159,7 @@ html {
 }
 
 .vitrine {
-    display: flex;
+    display: block;
     width: 80%;
     position: absolute;
     border: 1px solid black;
@@ -208,10 +211,21 @@ html {
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, min 768px max 1300) */
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
     .vitrine {
         width: 80%;
         position: relative;
+    }
+
+    .product {
+        margin: 1%;
+    }
+
+    .productImage {
+        padding: 5%;
+    }
+    .productName{
+        width: 150px;
     }
 } 
