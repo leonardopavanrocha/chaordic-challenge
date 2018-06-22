@@ -1,0 +1,165 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.top-bar {
+    background: #E5F1FB;
+    color: #006699;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.left-side {
+    margin-right: 10%;
+    display: inline-block;
+    padding-left: 10px;
+
+    border-radius: 10px 0px 0px 0px;
+}
+
+.right-side {
+    display: inline-block;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.bottom-bar {
+    display: flex;
+    width: 80%;
+}
+
+.product {
+    display: inline-block;
+    margin: 3%;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.box {
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0 2% 0 2%;
+
+}
+
+.recommended {
+    display: inline-block;
+    width: 80%;
+}
+
+.reference {
+    display: inline-block;
+}
+
+.productName {
+    white-space: nowrap;
+    line-height: 1;
+    font-size: small;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: gray;
+}
+
+.productImage {
+    padding: 10%;
+}
+
+.oldPrice {
+    font-size: small;
+    color: black;
+}
+
+.price {
+    color: #CD0000;
+}
+
+.paymentCondition {
+    color: #CD0000;
+    font-size: 0.8em;
+    line-height: 0.8;
+
+}
+
+.visited {
+    border-right: 1px solid lightgray;
+}
+
+.text{
+    margin: 1vh 0 1vh 0;
+    padding-left: 1%;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    font-size: 3em;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    width: 3%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.fas {
+    top: calc(50% - 2em);
+    position: relative;
+    color: #8C8C8C;
+}
+
+.fas:hover{
+    color: #175B9C;
+    cursor: pointer;
+}
+
+.fa-caret-right{
+    margin-left: 25%;
+}
+.fa-caret-left{
+    margin-right: 25%;
+}
+
+.showcase {
+    position: relative;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.vitrine {
+    display: flex;
+    width: 80%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 1%;
+}
+
+.imageBox {
+    background: white;
+    margin: 10% 10% 10% 10%;
+}
